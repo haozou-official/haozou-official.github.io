@@ -1,341 +1,277 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
-    <head>
-        <!-- Hi, this is Nelson. Please DELETE the <script> block below (L6-L13)
-          if you use this HTML, otherwise my analytics will track your page. -->
-	    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-6JJBYFH6RT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Hao Zou">
+  <meta name="description" content="Hao Zou - Columbia CS researcher working on masked diffusion language models, faithful summarization, inference-time algorithms, and long-horizon LLM agents.">
+  <meta property="og:title" content="Hao Zou">
+  <meta property="og:description" content="Research on reliable generation, masked diffusion language models, faithful summarization, and long-horizon LLM agents.">
+  <meta property="og:image" content="images/hao_zou.jpg">
+  <title>Hao Zou</title>
+  <link rel="shortcut icon" href="images/columbia.png" type="image/png">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
 
-  gtag('config', 'G-6JJBYFH6RT');
-</script>
-	    
-        <title>Hao Zou</title>
-  
-        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-        <meta charset="utf-8">
-        <meta property="og:url" content="https://haozou-official.github.io/" />
-	    <meta property="og:title" content="Hao Zou" />
-	    <meta property="og:image" content="http://nelsonliu.me/img/nelson-liu-2018.jpg" />
-	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-	    <meta name="author" content="Hao Zou">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link href="stylesheet.css" rel="stylesheet" type="text/css">
-        <link rel="icon" type="image/png" href="/img/columbia.png">
-	    
-        <link rel="shortcut icon" type="image/png" href="/img/columbia.png"/>
+<body>
+  <main class="page">
+    <table class="header-table"><tbody>
+      <tr>
+        <td class="intro-cell">
+          <p class="name">Hao Zou</p>
+          <p class="tagline">Reliable generation, masked diffusion language models, and long-horizon LLM agents.</p>
 
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-        <link href='https://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
-    </head>
-    <body>
-        <div class="container mt-5">
-            <div class="row mb-3">
-                <div class="col">
-                    <h1>Hao Zou</h1>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 order-0 order-xs-0 order-sm-0 order-md-1 order-lg-1">
-                    <div class="card mb-3">
-                        <img class="card-img-top" src="img/me.jpg" alt="Hao Zou">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                <b>Hao Zou</b>
-                            </h5>
-                            <p class="card-text">
-                                BS Student
-                                </br>
-                                Computer Science Department
-                                </br>
-                                University of Minnesota, Twin Cities
-                                </br>                        
-                                </br>
-                                pronouns: he/him
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6 order-1 order-xs-1 order-sm-1 order-md-0 order-lg-0">
-                    <p>
-                        Hi! I'm a Senior undergraduate student in Computer Science at University of Minnesota, Twin Cities (UMN), where
-                        I work in the <a href="https://dykang.github.io/recruit.html" style="text-decoration: none">Minnesota NLP Group</a> and 
-			<a href="http://dmr.cs.umn.edu/" style="text-decoration: none">UMN Data Analysis and Management Research Group</a>. My advisors 
-			are <a href="https://dykang.github.io/index.html#section_home" >Prof. Dongyeop Kang</a> and
-			<a href="https://scholar.google.com/citations?user=Y4J5SOwAAAAJ&hl=en" >Prof. Jaideep Srivastava</a>.
-                    </p>
-                    <p>		    
-			My research interests are in Machine Learning (ML) and Natural Language Processing (NLP), particularly in its 
-			intersections with Robustness and Generalization. To better combine applications with foundational theories, 
-			I share interests in theoretical ML as well, specifically in Deep Learning (DL). Current machine learning techniques
-			fall short of human abilities in both their capacity to learn with causal reasoning and to learn robust prediction 
-			mechanisms. My research aims to (1) understand and improve the robustness in learning, and (2) build interpretable 
-			and trustworthy systems that can communicate effectively with humans and learn from human guidance and controls. 
+          <p>
+            I am a Columbia CS researcher working with
+            <a href="https://www.cs.columbia.edu/~kathy/">Prof. Kathleen McKeown</a> and
+            <a href="https://www.cs.columbia.edu/~zhouyu/">Prof. Zhou Yu</a>,
+            and closely collaborating with
+            <a href="https://zacharyhorvitz.github.io/">Zachary Horvitz</a> and
+            <a href="https://jasonyux.com/">Xiao Yu</a>.
+            My research asks how language models can <strong>revise, reason, and act reliably</strong>
+            when evidence changes or tasks unfold over many steps.
+          </p>
 
-                        These interests and goals have drawn me toward three main research directions: 
-			<br>(1) Diffusion Models for compositional controllable generations and adversarial robustness; 
-			<br>(2) Causality in NLP; 
-			<br>(3) Understanding Adversarial Examples.
-                    </p>
-		    <p>
-		        Since May 2022, I started working with <a href="http://stat.wharton.upenn.edu/~suw/" >Prof. Weijie Su</a> and
-			<a href="https://hornhehhf.github.io/" >Prof. Hangfeng He</a> at University of Pennsylvania as Research Assistant.
-			I lead a project about A New Theory of Adversarial Examples and Generalization in Neural Networks (NN). 
-		    </p>
-                    <p>		    		    
-			Since May 2021, I interned at the <a href="https://wiki.umiacs.umd.edu/clip/index.php/Main_Page" 
-		        style="text-decoration: none">CLIP Lab</a> of University of Maryland Institute for Advanced Computer Studies (UMIACS) 
-			under <a href="http://users.umiacs.umd.edu/~jbg/" >Prof. Jordan Boyd-Graber</a> on improving Neural Question Answering 
-			Systems by leveraging self-supervised question generation. Previously, I've also spent time at the <a href="http://labs.sabanciuniv.edu/spis/" 
-		        style="text-decoration: none">Signal Processing and Information Systems Laboratory</a>, University of Rochester, 
-			working with <a href="http://www.hajim.rochester.edu/ece/people/faculty/cetin_mujdat/index.html" target="_blank">Prof. Mujdat Cetin</a>.
-                    </p>
-			<!--
-                    <p>
-                        My research interests include Natural Languaguge Generation, Question Answering, and the Causal Analysis in NLP. 
-		    I'm currently working with <a href="https://dykang.github.io/index.html#section_home" >Prof. Dongyeop Kang</a> and 
-			    focusing on Causal Analysis on Pre-trained Language Models.
-		    We are interested in finding out what cause the model to perform a syntactic generalization behavior from Causal Analysis perspective.
-	            Specifically, we are using ideology from Causal Inference such as counterfactual intervention and cauasl mediation analysis
-	            to uncover the mechanisms that underlie models’ sensitivity to syntactic bias in prompt engineering.
-		Meanwhile, I'm working with <a href="http://users.umiacs.umd.edu/~jbg/" >Prof. Jordan Boyd-Graber</a> 
-			    on Open-domain Question Answering (QA). 
-		    We are working on improving QA systems by synthetic questions using machine translation for question generation and conversion. 
-		    We are also trying to solve the ambiguity issue of question generation and paying attention to the interpretability of 
-		    language models.
-                    </p>
-		    <p>
-			Previously, I worked with <a href="https://scholar.google.com/citations?user=Y4J5SOwAAAAJ&hl=en" >Prof. Jaideep Srivastava</a>
-			with the focus on Stance Detection for political affiliation while applying concepts of weak supervision 
-			and knowledge graph for text classification and making sense of data in social media.
-		    </p>
--->
-		    <p>
-			Thanks to the support of my research mentors, it's my grear fortunate and honor to begin working on research early in my undergraduate career with those awesome researchers!
-		    </p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                <p align=center>
-                  <a href="mailto:hz2999@columbia.edu" style="text-decoration: none"><i class="fa fa-envelope"></i> Email</a> &nbsp/&nbsp
-                  <a href="files/20241213_CV.pdf" style="text-decoration: none"><i class="fa fa-file-pdf-o"></i> CV</a> &nbsp/&nbsp
-                  <a href="https://www.linkedin.com/in/hao-zou-05b447248/" style="text-decoration: none"> <i class="fa fa-linkedin"></i> LinkedIn </a> &nbsp/&nbsp
-                  <a href="https://github.com/haozou-official" style="text-decoration: none"> <i class="fa fa-github"></i> GitHub </a> &nbsp/&nbsp
-	          <a href="https://twitter.com/haozou_" style="text-decoration: none"> <i class="fa fa-twitter"></i> Twitter </a>
-                </p>
-		<!--
-                    <p>
-                        Email: zou00080 [<a href="https://en.wikipedia.org/wiki/At_sign" target="_blank">strudel</a>] umn.edu
-                    </p>
-		    <p>
-		        Find me on <a href="https://www.linkedin.com/in/hao-zou-05b447248/" target="_blank">LinkedIn</a>,
-			<a href="https://twitter.com/haozou_" target="_blank">Twitter</a>,
-			<a href="https://github.com/haozou-official" target="_blank">Github</a>.
-		    </p>
-                    <p>
-                        Check my most recent CV
-                        <a href="files/cv.pdf" target="_blank">here</a>.
-                    </p>
-                -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h2>Recent News</h2>
-                    <ul>
-			<li>
-		            (02/2023) Serving on the Program Committee for ACL 2023!
-			</li>
-			<li>
-		            (10/2022) Paper on [Debiasing Language Models for In-Context Learning by Adapting Causal Inference],
-				<!-- [<a href="files/EACL_2023_Proceedings_Causality_for_Debiasing_LMs.pdf" target="_blank">
-			    Debiasing Language Models for In-Context Learning by Adapting Causal Inference</a>], -->
-			    submitted to <a href="https://2023.eacl.org/" style="text-decoration: none"">EACL 2023</a>.
-			</li>
-			<li>
-			    (10/2022) Started the collaboration with SONY Research within <a href="http://cs-u-ada.cs.umn.edu/team/"
-		            style="text-decoration: none">Minnesota NLP Group</a> for Controllable and Compositional Text Generation!
-			</li>
-		        <li>
-			    (09/2022) Accepted to CS Research Mentorship Program <a href="https://research.google/outreach/csrmp/"
-		            style="text-decoration: none">(CSRMP)</a> at Google Research!
-			</li>
-			<li>
-		            (06/2022) Paper on [<a href="files/qb2nq_EMNLP_2022_Proceedings_QA_MT_arXiv.pdf" target="_blank">You Make me Feel like a Natural Question: 
-			    Training QA Systems on Transformed Trivia Questions</a>], 
-			    submitted to <a href="https://2022.emnlp.org/" style="text-decoration: none">EMNLP 2022</a>.
-			</li>
-			<li>
-			    (05/2022) Started working with <a href="http://stat.wharton.upenn.edu/~suw/" target="_blank">Prof. Weijie Su</a> and 
-			    <a href="https://hornhehhf.github.io/" >Prof. Hangfeng He</a></dd> as Research Assistant at UPenn!
-			</li>
-			<li>
-			    (03/2022) Started the collaboration with <a href="https://yohanjo.github.io/" target="_blank">Dr. Yohan Jo</a> from
-			    <a href="https://www.amazon.science/research-areas/conversational-ai-natural-language-processing" style="text-decoration: none">
-		            Amazon Alexa AI</a> on Debiasing Language Models for In-Context Learning from Causality!
-			</li>
-			<li>
-		            (08/2021) Joined <a href="http://cs-u-ada.cs.umn.edu/team/" style="text-decoration: none">Minnesota NLP Group</a>
-			    under <a href="https://dykang.github.io/index.html#section_home" target="_blank">Prof. Dongyeop Kang</a>!
-			</li>
-                        <li>
-                            (08/2021) Paper on [<a href="https://arxiv.org/pdf/2210.06599.pdf" target="_blank">Improving Question Answering with Generation of NQ-like Questions</a>], 
-			    submitted to <a href="https://mrqa.github.io/" style="text-decoration: none">MRQA 2021</a>.
-                        </li>
-			<li>
-			    (05/2021) Accepted in Internship program at <a href="https://wiki.umiacs.umd.edu/clip/index.php/Main_Page" style="text-decoration: none">CLIP</a>
-			    Lab under <a href="http://users.umiacs.umd.edu/~jbg/" target="_blank">Prof. Jordan Boyd-Graber</a>!
-			</li>
-			<li>
-			    (05/2021) Preprint paper on [<a href="files/CSCI_5525_Project.pdf" target="_blank">A Survey of Causality in Visual Question Answering</a>], 
-			    for Grad course Machine Learning: Analysis and Methods, <a href="https://sunju.org/" target="_blank">Prof. Ju Sun</a>.
-			</li>
-			<li>
-		            (05/2021) Preprint paper on [<a href="files/HINF5610_Report.pdf" target="_blank">Text Simplification for Leadless Pacemaker Failure
-Reports in MAUDE</a>], for Grad course Biomedical NLP, <a href="https://ruizhang.umn.edu/" target="_blank">Prof. Rui Zhang</a>.
-			</li>
-			<li>
-		            (12/2020) Preprint paper on [<a href="files/A_Conceptual_Framework_for_Clinical_Note_Analysis.pdf" target="_blank">A Conceptual Framework for Clinical Note Analysis</a>], 
-			    for Grad course Think Deep Learning, <a href="https://sunju.org/" target="_blank">Prof. Ju Sun</a>.
-			</li>
-                    </ul>
-                </div>
-            </div>
-            <hr>
+          <p>
+            My recent work connects two threads: (1) <strong>masked diffusion language models</strong>
+            for controllable editing, faithful summarization, and inference-time reasoning; and
+            (2) <strong>LLM agents</strong> for realistic computer-use workflows, environment scaling,
+            and harness-based training. Starting Summer 2026, I am continuing in the Columbia
+            CS Department as a Staff Associate I on an IARPA-funded project on faithful summarization.
+          </p>
 
-            <div class="row" id="experience">
-                <div class="col">
-                    <h2>Experience</h2>
-	<br>		
-        <dl>
-          <img class="img-fluid z-depth-1 rounded" src="/img/upenn.png" width='135' height='YYY'>
-	  <dd>Research Assistant</dd>
-          <dt>University of Pennsylvania</dt>
-	  <dt>Advisor: <a href="http://stat.wharton.upenn.edu/~suw/" >Prof. Weijie Su</a>, 
-				    <a href="https://hornhehhf.github.io/" >Prof. Hangfeng He</a><dt>
-	  <dd>May. 2022 - present</dd>
-	  <br>			    
-				    
-          <img class="img-fluid z-depth-1 rounded" src="/img/UMN_NLP_logo_final_circle.png" width='135' height='YYY'>
-	  <dd>Group Member</dd>
-          <dt>University of Minnesota, Twin Cities</dt>
-	  <dt><a href="https://dykang.github.io/not.html" 
-		        style="text-decoration: none">Minnesota NLP Group</a>, 
-				    Advisor: <a href="https://dykang.github.io/index.html#section_group" title="Dongyeop Kand">Dongyeop Kang</a>,
-				    <a href="https://yohanjo.github.io/" target="_blank">Yohan Jo</a> (Amazon Alexa AI)<dt>
-	  <dd>August. 2021 - present</dd>
-	  <br>
-		
-          <img class="img-fluid z-depth-1 rounded" src="/img/umd.png" width='135' height='YYY'>
-	  <dd>Research Intern</dd>
-          <dt>University of Maryland, College Park</dt>
-	  <dt><a href="https://wiki.umiacs.umd.edu/clip/index.php/Main_Page" 
-		        style="text-decoration: none">CLIP Lab</a>, 
-				    Advisor: <a href="http://users.umiacs.umd.edu/~jbg/" title="Jordan Boyd-Graber">Jordan Boyd-Graber</a>,
-				    <a href="https://scholar.google.co.in/citations?user=UqTGV4gAAAAJ&hl=en" >Dr. Saptarashmi Bandyopadhyay</a><dt>
-          <dd>May. 2021 - Jun. 2022</dd>
-          <br>
-				    
-          <img class="img-fluid z-depth-1 rounded" src="/img/umn.png" width='135' height='YYY'>
-	  <dd>Group Member</dd>
-          <dt>University of Minnesota, Twin Cities</dt>
-	  <dt><a href="http://dmr.cs.umn.edu/" 
-		        style="text-decoration: none">DMR Lab</a>,
-				    Advisor: <a href="https://scholar.google.com/citations?user=Y4J5SOwAAAAJ&hl=en" title="Jaideep Srivastava">Jaideep Srivastava</a><dt>
-	  <dd>Sept. 2020 - Aug. 2021</dd> 
-	  <br>
-				    
-          <img class="img-fluid z-depth-1 rounded" src="/img/rochester.png" width='135' height='YYY'>
-	  <dd>Research Intern</dd>
-          <dt>University of Rochester, New York</dt>
-	  <dt><a href="http://labs.sabanciuniv.edu/spis/" 
-		        style="text-decoration: none">Signal Processing and Information Systems Lab</a>,
-				    Advisor: <a href="https://scholar.google.com/citations?user=nq7tuDkAAAAJ&hl=en" title="Mujdat Cetin">Mujdat Cetin</a><dt>
-	  <dd>Jun. 2020 - Oct. 2020</dd>
-        </dl>
-                    
-                </div>
-            </div>
-            <hr>
+          <p>
+            Previously, I worked with
+            <a href="https://www.cs.umd.edu/people/jbg">Prof. Jordan Boyd-Graber</a>
+            at the UMD CLIP Lab, and with
+            <a href="https://dykang.github.io/">Prof. Dongyeop Kang</a>
+            at the University of Minnesota NLP group. I received my B.S. in Computer Science from
+            the University of Minnesota, Twin Cities, and my M.S. in Computer Science from Columbia University.
+          </p>
 
-            <div class="row" id="publications">
-                <div class="col">
-                    <h2>Publications</h2>
-		    <h3>2022</h3>
-				    <ul>
-				    <li>
-				    Debiasing Language Models for In-Context Learning by Adapting Causal Inference
-				    <!-- [<a href="files/EACL_2023_Proceedings_Causality_for_Debiasing_LMs.pdf" target="_blank">
-			    Debiasing Language Models for In-Context Learning by Adapting Causal Inference</a>] --> , 
-				submitted to <a href="https://2023.eacl.org/" target="_blank">EACL 2023</a>.
-				    </li>
-				    <b>Hao Zou</b>, Karin de Langis, Dongyeop Kang and Yohan Jo
-			<br>
-				    <li>
-		      <a href="files/qb2nq_EMNLP_2022_Proceedings_QA_MT_arXiv.pdf" target="_blank">You Make me Feel like a Natural Question: 
-				Training QA Systems on Transformed Trivia Questions</a>, 
-				submitted to <a href="https://2022.emnlp.org/" target="_blank">EMNLP 2022</a>.
-				    </li>
-				    Saptarashmi Bandyopadhyay, <b>Hao Zou</b>, Chenqi Zhu, Jordan Boyd-Graber, et al
-				    </ul>
-                    <h3>2021</h3>
-		      <ul>
-		      <li>
-                      <a href="https://arxiv.org/pdf/2210.06599.pdf" target="_blank">Improving Question Answering with Generation of NQ-like Questions</a>, 
-				submitted to <a href="https://mrqa.github.io/" target="_blank">MRQA 2021</a>.
-		      </li>
-		      Saptarashmi Bandyopadhyay, <b>Hao Zou</b>, Jordan Boyd-Graber, et al.
-		      </ul>
-                </div>
-            </div>
-            <hr>
-            <div class="row">
-                <div class="col">
-                    <h2>Miscellany</h2>
-                    <ul>
-                        <li>
-                            Also interested in finance and economics: CFA Level I Candidate.
-                        </li>
-                        <li>
-                            Fan of table games, skiing (it's Minnesota!), and biking.
-                        </li>
-			<li>
-		            In my leisure time, I enjoy watching ANIME, playing piano and reading.
-			</li>
-                    </ul>
-                </div>
-            </div>
-            <footer class="pt-2 my-md-2 pt-md-2 border-top">
-                <div class="row justify-content-center">
-                    <div class="col-6 col-md text-left align-self-center">
-                        <p class="h5 text-muted">
-                            © Nelson Liu, 2020
-                        </p>
-                    </div>
-                    <div class="col-6 col-md text-right">
-			    <!--
-                        <a href="https://nlp.stanford.edu" class="image-link">
-                            <img class="mr-4" src="img/UMN_NLP_logo_final_circle.png" alt="Stanford NLP Group logo." height="75">
-                        </a> 
-                        <a href="http://ai.stanford.edu" class="image-link">
-                            <img src="img/UMN_NLP_logo_final_horizontal_transparent.png" alt="Minnesota NLP Lab logo." height="75">
-                        </a> 
-				-->
-			    <p>"When I stand before thee at the day's end, Thou shalt see my scars and know that I had my wounds and also my healing." 
-				    -- Rabindranath Tagore</a></p>
-                    </div>
-                </div>
-            </footer>
-        </div>
-    </body>
+          <p class="links">
+            <a href="mailto:hz2999@columbia.edu">Email</a> /
+            <a href="files/Hao_Zou_CV.pdf">CV</a> /
+            <a href="https://scholar.google.com/citations?hl=en&user=jwujaocAAAAJ">Google Scholar</a> /
+            <a href="https://github.com/haozou-official">GitHub</a> /
+            <a href="https://x.com/haozou_official">X/Twitter</a> /
+            <a href="https://www.linkedin.com/in/hao-zou-05b447248/">LinkedIn</a>
+          </p>
+        </td>
+        <td class="photo-cell">
+          <a href="images/hao_zou.jpg"><img class="profile-photo" alt="Hao Zou profile photo" src="images/hao_zou.jpg"></a>
+        </td>
+      </tr>
+    </tbody></table>
+
+    <section>
+      <h2>Research</h2>
+      <p>
+        My long-term goal is to build AI systems that remain faithful and useful under uncertainty:
+        systems that can detect unsupported claims, localize what should be changed, allocate computation
+        to uncertain parts of a reasoning trace, and act safely in long-horizon environments. I approach this
+        through a bridge between <strong>diffusion-based generation/editing</strong> and <strong>agent evaluation/training</strong>.
+      </p>
+      <p>
+        In diffusion language modeling, I study how non-autoregressive models can use their ability to infill
+        and revise arbitrary spans for faithful summarization, reasoning templates, and efficient inference.
+        In agents, I study how realistic environments, verifiers, and harnesses can make training and evaluation
+        match the way agents are actually deployed.
+      </p>
+    </section>
+
+    <section>
+      <h2>News</h2>
+      <ul class="news-list">
+        <li><strong>Jun 2026:</strong> <em>Detect, Remask, Repair</em> is on arXiv and under review at EMNLP 2026.</li>
+        <li><strong>Jun 2026:</strong> Continuing at Columbia CS as a Staff Associate I in Prof. McKeown's group on faithful summarization.</li>
+        <li><strong>2026:</strong> <em>OSWorld 2.0</em>, a benchmark for long-horizon real-world computer-use agents, is under review at NeurIPS 2026.</li>
+        <li><strong>2025:</strong> <em>No Compute Left Behind</em> studies reasoning, sampling, and inference-time compute allocation for masked diffusion language models.</li>
+        <li><strong>2024:</strong> Our question rewriting work was accepted to EMNLP 2024.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Selected Papers &amp; Projects</h2>
+      <p class="section-note">
+        Asterisks indicate equal contribution when applicable. Paper figures below are placeholders and can be replaced with final figures.
+      </p>
+      <table class="publication-table"><tbody>
+
+        <tr class="publication highlight-row">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="Detect Remask Repair placeholder" src="images/papers/drr.svg">
+          </td>
+          <td class="pub-content-cell">
+            <a href="https://arxiv.org/abs/2606.12807"><span class="papertitle">Detect, Remask, Repair: Diffusion Editing for Faithful Summarization of Evolving Contexts</span></a>
+            <br>
+            <strong>Hao Zou</strong>, Zachary Horvitz, Chandhru Karthick, Zhou Yu, Kathleen McKeown
+            <br>
+            <em>Under review, EMNLP 2026</em>
+            <br>
+            <a href="https://arxiv.org/abs/2606.12807">arXiv</a> /
+            <a href="data/zou2026detect.bib">bibtex</a>
+            <p>
+              A diffusion-based framework for localized faithfulness repair: detect unsupported spans in an existing summary,
+              remask them, and repair only the unreliable content instead of fully regenerating the summary.
+            </p>
+          </td>
+        </tr>
+
+        <tr class="publication highlight-row">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="OSWorld 2.0 placeholder" src="images/papers/osworld2.svg">
+          </td>
+          <td class="pub-content-cell">
+            <span class="papertitle">OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks</span>
+            <br>
+            Large collaborative project
+            <br>
+            <em>Under review, NeurIPS 2026</em>
+            <br>
+            <span class="muted">project page / arXiv coming soon</span>
+            <p>
+              A benchmark of 102 realistic computer-use tasks and 30 self-hosted mock websites for evaluating long-horizon GUI agents,
+              including dynamic workflows, tutorial following, simulated-user interaction, multimodal editing, and safety-oriented checks.
+            </p>
+          </td>
+        </tr>
+
+        <tr class="publication">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="Harness-based agent training placeholder" src="images/papers/openforge.svg">
+          </td>
+          <td class="pub-content-cell">
+            <span class="papertitle">Scalable Environments and Training Infrastructure for Harness-Based Agents</span>
+            <br>
+            Ongoing collaboration with Xiao Yu
+            <br>
+            <em>In preparation, 2026</em>
+            <p>
+              Building agent-curated task environments and training infrastructure that connects real inference harnesses to SFT/RL pipelines,
+              reducing the mismatch between how agents are trained and how they are deployed.
+            </p>
+          </td>
+        </tr>
+
+        <tr class="publication">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="No Compute Left Behind placeholder" src="images/papers/nclb.svg">
+          </td>
+          <td class="pub-content-cell">
+            <a href="https://arxiv.org/abs/2510.19990"><span class="papertitle">No Compute Left Behind: Rethinking Reasoning and Sampling with Masked Diffusion Models</span></a>
+            <br>
+            Zachary Horvitz, Raghav Singhal, <strong>Hao Zou</strong>, Carles Domingo-Enrich, Zhou Yu, Rajesh Ranganath, Kathleen McKeown
+            <br>
+            <em>Under review, ICLR 2026</em>
+            <br>
+            <a href="https://arxiv.org/abs/2510.19990">arXiv</a> /
+            <a href="data/horvitz2025nocompute.bib">bibtex</a>
+            <p>
+              Studies how masked diffusion language models use inference-time compute, including reasoning-as-infilling,
+              answer-conditioned posterior sampling, uncertainty-aware early exit, and reasoning validation.
+            </p>
+          </td>
+        </tr>
+
+        <tr class="publication">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="Natural Question QA placeholder" src="images/papers/qa.svg">
+          </td>
+          <td class="pub-content-cell">
+            <a href="https://aclanthology.org/2024.emnlp-main.1140/"><span class="papertitle">You Make me Feel like a Natural Question: Training QA Systems on Transformed Trivia Questions</span></a>
+            <br>
+            Tasnim Kabir, Yoo Yeon Sung, Saptarashmi Bandyopadhyay, <strong>Hao Zou</strong>, Abhranil Chandra, Jordan Boyd-Graber
+            <br>
+            <em>EMNLP 2024</em>
+            <br>
+            <a href="https://aclanthology.org/2024.emnlp-main.1140/">paper</a> /
+            <a href="data/kabir2024natural.bib">bibtex</a>
+            <p>
+              Transforms trivia-style questions into more natural information-seeking questions to improve retrieval alignment
+              and cross-domain question answering.
+            </p>
+          </td>
+        </tr>
+
+        <tr class="publication">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="Diffusion Models in NLP placeholder" src="images/papers/diffusion_survey.svg">
+          </td>
+          <td class="pub-content-cell">
+            <a href="https://arxiv.org/abs/2305.14671"><span class="papertitle">A Survey of Diffusion Models in Natural Language Processing</span></a>
+            <br>
+            <strong>Hao Zou</strong>, Zae Myung Kim, Dongyeop Kang
+            <br>
+            <em>arXiv, 2023</em>
+            <br>
+            <a href="https://arxiv.org/abs/2305.14671">arXiv</a> /
+            <a href="data/zou2023survey.bib">bibtex</a>
+            <p>
+              Surveys diffusion formulations for NLP, including non-autoregressive generation, text editing, token-level control,
+              robustness, and scaling directions for diffusion language models.
+            </p>
+          </td>
+        </tr>
+
+        <tr class="publication">
+          <td class="pub-image-cell">
+            <img class="pub-image" alt="Causal debiasing placeholder" src="images/papers/debias.svg">
+          </td>
+          <td class="pub-content-cell">
+            <span class="papertitle">Debiasing Language Models for In-Context Learning Using a Causal Inference-Inspired Method</span>
+            <br>
+            <strong>Hao Zou</strong>, Karin de Langis, Dongyeop Kang, Yohan Jo
+            <br>
+            <em>Manuscript, 2023</em>
+            <br>
+            <a href="data/zou2023debiasing.bib">bibtex</a>
+            <p>
+              Uses intervention-inspired estimates of the causal effect of input text to reduce spurious prompt-label bias in in-context learning.
+            </p>
+          </td>
+        </tr>
+
+      </tbody></table>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <table class="experience-table"><tbody>
+        <tr>
+          <td class="date-cell">2025 - Present</td>
+          <td><strong>NLP Lab, Columbia University</strong><br>Graduate researcher / Staff Associate I. Working on faithful summarization, masked diffusion language models, inference-time algorithms, and LLM agents with Kathleen McKeown, Zhou Yu, Zachary Horvitz, and Xiao Yu.</td>
+        </tr>
+        <tr>
+          <td class="date-cell">2024 - 2025</td>
+          <td><strong>IBM</strong><br>AI Algorithms Intern. Worked on LLM inference efficiency, KV-cache quantization, and attention benchmarking.</td>
+        </tr>
+        <tr>
+          <td class="date-cell">2024 - 2025</td>
+          <td><strong>Duke University</strong><br>Graduate research with Enmao Diao on diffusion/flow-matching training objectives and benchmarking.</td>
+        </tr>
+        <tr>
+          <td class="date-cell">2021 - 2023</td>
+          <td><strong>University of Minnesota NLP Group</strong><br>Undergraduate research with Dongyeop Kang on diffusion models for NLP, causal analysis, and controllable generation.</td>
+        </tr>
+        <tr>
+          <td class="date-cell">2021 - 2022</td>
+          <td><strong>UMD CLIP Lab</strong><br>Undergraduate research with Jordan Boyd-Graber on question rewriting and retrieval for open-domain QA.</td>
+        </tr>
+        <tr>
+          <td class="date-cell">2022 - 2023</td>
+          <td><strong>Sony Research</strong><br>Research intern on controllable generation and reinforcement learning from human preferences.</td>
+        </tr>
+      </tbody></table>
+    </section>
+
+    <footer>
+      <p>
+        This website is adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's academic website template</a>.
+        Last updated: June 2026.
+      </p>
+    </footer>
+  </main>
+</body>
 </html>

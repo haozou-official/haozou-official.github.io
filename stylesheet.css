@@ -1,0 +1,258 @@
+:root {
+  --text: #222;
+  --muted: #666;
+  --link: #1772d0;
+  --link-hover: #f09228;
+  --highlight: #ffffd8;
+  --line: #e7e7e7;
+  --soft: #f8fafc;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body,
+td,
+th,
+tr,
+p,
+a,
+li {
+  font-family: Lato, Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+body {
+  margin: 0;
+  background: #fff;
+}
+
+.page {
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 0 16px 36px 16px;
+  box-sizing: border-box;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:focus,
+a:hover {
+  color: var(--link-hover);
+  text-decoration: none;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h2 {
+  margin: 0 0 10px 0;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+section {
+  margin-top: 18px;
+  padding: 10px 0 0 0;
+}
+
+.header-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0;
+  border-collapse: separate;
+  margin: 22px auto 8px auto;
+}
+
+.intro-cell {
+  padding: 2.5%;
+  width: 64%;
+  vertical-align: middle;
+}
+
+.photo-cell {
+  padding: 2.5%;
+  width: 36%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.name {
+  padding-top: 6px;
+  margin: 0;
+  text-align: center;
+  font-size: 34px;
+  font-weight: 400;
+}
+
+.tagline {
+  text-align: center;
+  color: var(--muted);
+  margin-top: 6px;
+  margin-bottom: 18px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.profile-photo {
+  width: 100%;
+  max-width: 260px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+}
+
+.news-list {
+  margin-top: 6px;
+  padding-left: 20px;
+}
+
+.news-list li {
+  margin: 4px 0;
+}
+
+.section-note {
+  color: var(--muted);
+  margin-top: 0;
+}
+
+.publication-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 10px;
+  border-collapse: separate;
+  margin: 0 auto;
+}
+
+.publication td {
+  vertical-align: middle;
+}
+
+.pub-image-cell {
+  width: 22%;
+  padding: 14px 16px;
+}
+
+.pub-content-cell {
+  width: 78%;
+  padding: 12px 8px;
+}
+
+.pub-image {
+  width: 100%;
+  max-width: 170px;
+  border-radius: 12px;
+  display: block;
+  box-shadow: 0 1px 7px rgba(0, 0, 0, 0.08);
+}
+
+.papertitle {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.publication p {
+  margin: 8px 0 0 0;
+}
+
+.highlight-row {
+  background-color: var(--highlight);
+}
+
+.muted {
+  color: var(--muted);
+}
+
+.experience-table {
+  width: 100%;
+  border: 0;
+  border-spacing: 0 7px;
+  border-collapse: separate;
+}
+
+.experience-table td {
+  vertical-align: top;
+  padding: 6px 0;
+  border-top: 1px solid var(--line);
+}
+
+.date-cell {
+  width: 18%;
+  min-width: 95px;
+  color: var(--muted);
+  padding-right: 20px !important;
+  white-space: nowrap;
+}
+
+footer {
+  margin-top: 28px;
+  border-top: 1px solid var(--line);
+  padding-top: 12px;
+}
+
+footer p {
+  color: var(--muted);
+  font-size: 12px;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .header-table,
+  .header-table tbody,
+  .header-table tr,
+  .header-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .photo-cell {
+    order: -1;
+  }
+
+  .profile-photo {
+    max-width: 210px;
+  }
+
+  .name {
+    font-size: 30px;
+  }
+
+  .publication-table,
+  .publication-table tbody,
+  .publication-table tr,
+  .publication-table td {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .pub-image-cell {
+    padding: 12px 12px 4px 12px;
+  }
+
+  .pub-content-cell {
+    padding: 8px 12px 12px 12px;
+  }
+
+  .pub-image {
+    max-width: 260px;
+  }
+
+  .date-cell {
+    width: 100%;
+    padding-bottom: 0 !important;
+  }
+}
