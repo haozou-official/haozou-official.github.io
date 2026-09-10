@@ -1,286 +1,246 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="author" content="Hao Zou">
-  <meta name="description" content="Hao Zou - Columbia CS researcher working on masked diffusion language models, faithful summarization, inference-time algorithms, and long-horizon LLM agents.">
+  <meta name="description" content="Hao Zou — M.S. student in Computer Science at Columbia University working on masked diffusion language models and long-horizon LLM agents.">
   <meta property="og:title" content="Hao Zou">
-  <meta property="og:description" content="Research on reliable generation, masked diffusion language models, faithful summarization, and long-horizon LLM agents.">
+  <meta property="og:description" content="Masked diffusion language models and long-horizon LLM agents.">
   <meta property="og:image" content="images/hao_zou.jpg">
+  <meta name="theme-color" content="#fbfbfa">
   <title>Hao Zou</title>
-  <link rel="shortcut icon" href="images/columbia.png" type="image/png">
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+
+  <link rel="icon" href="images/columbia.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
-  <main class="page">
-    <table class="header-table"><tbody>
-      <tr>
-        <td class="intro-cell">
-          <p class="name">Hao Zou</p>
-          <p class="tagline">Reliable generation, masked diffusion language models, and long-horizon LLM agents.</p>
+  <div class="theme-toggle" role="group" aria-label="Color theme">
+    <button id="themeLight" aria-label="Light mode" title="Light mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <circle cx="12" cy="12" r="4.5"></circle>
+        <path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path>
+      </svg>
+    </button>
+    <button id="themeDark" aria-label="Dark mode" title="Dark mode">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"></path>
+      </svg>
+    </button>
+  </div>
 
+  <main class="wrap">
+    <header class="hero reveal">
+      <div class="hero-copy">
+        <h1>Hao Zou</h1>
+        <p class="role">M.S. Student, Columbia University</p>
+
+        <div class="bio">
           <p>
-            I am a Columbia CS researcher working with
+            I am a second-year M.S. student in Computer Science at Columbia University working with
             <a href="https://www.cs.columbia.edu/~kathy/">Prof. Kathleen McKeown</a> and
-            <a href="https://www.cs.columbia.edu/~zhouyu/">Prof. Zhou Yu</a>,
-            and closely collaborating with
-            <a href="https://zacharyhorvitz.github.io/">Zachary Horvitz</a> and
-            <a href="https://jasonyux.com/">Xiao Yu</a>.
-            My research asks how language models can <strong>revise, reason, and act reliably</strong>
-            when evidence changes or tasks unfold over many steps.
+            <a href="https://www.cs.columbia.edu/~zhouyu/">Prof. Zhou Yu</a>.
+            My research focuses on <strong>masked diffusion language models</strong> and
+            <strong>LLM agents for long-horizon tasks</strong>.
           </p>
-
           <p>
-            My recent work connects two threads: (1) <strong>masked diffusion language models</strong>
-            for controllable editing, faithful summarization, and inference-time reasoning; and
-            (2) <strong>LLM agents</strong> for realistic computer-use workflows, environment scaling,
-            and harness-based training. Starting Summer 2026, I am continuing in the Columbia
-            CS Department as a Research Staff Associate on an IARPA-funded project on faithful summarization.
+            I am interested in how language models can <strong>revise and reason through iterative infilling</strong>,
+            and how agents can <strong>learn and operate reliably over realistic long-horizon environments</strong>.
+            More broadly, I work on language modeling, reasoning, reinforcement learning, and reliable generative AI.
           </p>
+        </div>
 
-          <p>
-            Previously, I worked with
-            <a href="https://www.cs.umd.edu/people/jbg">Prof. Jordan Boyd-Graber</a>
-            at the UMD CLIP Lab, and with
-            <a href="https://dykang.github.io/">Prof. Dongyeop Kang</a>
-            at the University of Minnesota NLP group. I received my B.S. in Computer Science from
-            the University of Minnesota, Twin Cities, and my M.S. in Computer Science from Columbia University in May 2026.
-          </p>
+        <nav class="links" aria-label="Profile links">
+          <a href="mailto:hz2999@columbia.edu">Email</a>
+          <a href="files/Hao_Zou_CV.pdf">CV</a>
+          <a href="https://scholar.google.com/citations?hl=en&user=jwujaocAAAAJ">Google Scholar</a>
+          <a href="https://github.com/haozou-official">GitHub</a>
+          <a href="https://www.linkedin.com/in/hao-zou-05b447248/">LinkedIn</a>
+        </nav>
+      </div>
 
-          <p class="links">
-            <a href="mailto:hz2999@columbia.edu">Email</a> /
-            <a href="files/Hao_Zou_CV.pdf">CV</a> /
-            <a href="https://scholar.google.com/citations?hl=en&user=jwujaocAAAAJ">Google Scholar</a> /
-            <a href="https://github.com/haozou-official">GitHub</a> /
-            <a href="https://x.com/haozou_official">X/Twitter</a> /
-            <a href="https://www.linkedin.com/in/hao-zou-05b447248/">LinkedIn</a>
-          </p>
-        </td>
-        <td class="photo-cell">
-          <a href="images/hao_zou.jpg"><img class="profile-photo" alt="Hao Zou profile photo" src="images/hao_zou.jpg"></a>
-        </td>
-      </tr>
-    </tbody></table>
+      <a class="portrait-link" href="images/hao_zou.jpg" aria-label="View profile photo">
+        <img class="portrait" src="images/hao_zou.jpg" alt="Hao Zou">
+      </a>
+    </header>
 
-    <section>
-      <h2>Research</h2>
-      <p>
-        My long-term goal is to build AI systems that remain faithful and useful under uncertainty:
-        systems that can detect unsupported claims, localize what should be changed, allocate computation
-        to uncertain parts of a reasoning trace, and act safely in long-horizon environments. I approach this
-        through a bridge between <strong>diffusion-based generation/editing</strong> and <strong>agent evaluation/training</strong>.
-      </p>
-      <p>
-        In diffusion language modeling, I study how non-autoregressive models can use their ability to infill
-        and revise arbitrary spans for faithful summarization, reasoning templates, and efficient inference.
-        In agents, I study how realistic environments, verifiers, and harnesses can make training and evaluation
-        match the way agents are actually deployed.
-      </p>
-    </section>
+    <section class="section publications-section" id="publications">
+      <div class="section-head reveal">
+        <h2>Publications</h2>
+        <div class="toggle" role="group" aria-label="Filter publications">
+          <button id="select0" class="active" type="button" onclick="showPubs(0)">Selected</button>
+          <button id="select1" type="button" onclick="showPubs(1)">All</button>
+        </div>
+      </div>
+      <p class="note reveal">Representative work across diffusion language models and long-horizon agents.</p>
 
-    <section>
-      <h2>News</h2>
-      <ul class="news-list">
-        <li><strong>Aug 2026:</strong> <em>Detect, Remask, Repair</em> was accepted to EMNLP 2026 Main Conference!</li>
-        <li><strong>Jul 2026:</strong> <em>OpenForgeRL</em> is on arXiv, and the code has been released.</li>
-        <li><strong>Jul 2026:</strong> <em>Rethinking Reasoning with MDLMs</em> was accepted to COLM 2026!</li>
-        <li><strong>Jun 2026:</strong> Continuing at Columbia CS as a Research Staff Associate in Prof. McKeown's group on faithful summarization.</li>
-        <li><strong>Jun 2026:</strong> <em>OSWorld 2.0</em> is on arXiv with the project website released.</li>
-        <li><strong>2024:</strong> Our question rewriting work was accepted to EMNLP 2024!</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Selected Papers &amp; Projects</h2>
-      <p class="section-note">
-      </p>
-      <table class="publication-table"><tbody>
-
-        <tr class="publication highlight-row">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="Detect Remask Repair placeholder" src="images/papers/drr.png">
-          </td>
-          <td class="pub-content-cell">
-            <a href="https://arxiv.org/abs/2606.12807"><span class="papertitle">Detect, Remask, Repair: Diffusion Editing for Faithful Summarization of Evolving Contexts</span></a>
-            <br>
-            <strong>Hao Zou</strong>, Zachary Horvitz, Chandhru Karthick, Zhou Yu, Kathleen McKeown
-            <br>
-            <em>EMNLP 2026 Main Conference</em>
-            <br>
-            <a href="https://arxiv.org/abs/2606.12807">arXiv</a> /
+      <article class="pub pub-selected representative reveal">
+        <a class="pub-media" href="https://arxiv.org/abs/2606.12807">
+          <img src="images/papers/drr.png" alt="Detect, Remask, Repair method overview">
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="https://arxiv.org/abs/2606.12807">Detect, Remask, Repair: Diffusion Editing for Faithful Summarization of Evolving Contexts</a>
+          <p class="authors"><span class="me">Hao Zou</span>, Zachary Horvitz, Chandhru Karthick, Zhou Yu, Kathleen McKeown</p>
+          <p class="venue">EMNLP 2026 Main Conference</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2606.12807">arXiv</a>
+            <a href="https://openreview.net/pdf?id=xlZafpohnb">paper</a>
             <a href="data/zou2026detect.bib">bibtex</a>
-            <p>
-              A diffusion-based framework for localized faithfulness repair: detect unsupported spans in an existing summary,
-              remask them, and repair only the unreliable content instead of fully regenerating the summary.
-            </p>
-          </td>
-        </tr>
+          </p>
+          <p class="pub-desc">Localized diffusion editing for detecting, remasking, and repairing unsupported content without regenerating the full summary.</p>
+        </div>
+      </article>
 
-        <tr class="publication highlight-row">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="OSWorld 2.0 benchmark thumbnail" src="images/papers/osworld2.png">
-          </td>
-          <td class="pub-content-cell">
-            <a href="https://osworld-v2.xlang.ai/"><span class="papertitle">OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks</span></a>
-            <br>
-            Large collaborative project
-            <br>
-            <em>Under review, NeurIPS 2026</em>
-            <br>
-            <a href="https://osworld-v2.xlang.ai/">project page</a> /
-            <a href="https://arxiv.org/abs/2606.29537">arXiv</a> /
-            <a href="https://arxiv.org/pdf/2606.29537">pdf</a>
-            <p>
-              A benchmark of 108 long-horizon computer-use workflows and 31 self-hosted websites for evaluating realistic GUI agents,
-              including streaming interaction, dynamic environments, cross-source reasoning, implicit-state inference, multimodal editing,
-              and safety-oriented checks.
-            </p>
-          </td>
-        </tr>
-
-        <tr class="publication highlight-row">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="OpenForgeRL rollout architecture thumbnail" src="images/papers/rollout_arch_0716.png" onerror="this.onerror=null;this.src='images/papers/openforge.svg';">
-          </td>
-          <td class="pub-content-cell">
-            <a href="https://arxiv.org/abs/2607.21557"><span class="papertitle">OpenForgeRL: Train Harness-native Agents in Any Environment</span></a>
-            <br>
-            Xiao Yu, Baolin Peng, Ruize Xu, <strong>Hao Zou</strong>, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao
-            <br>
-            <em>arXiv, 2026</em>
-            <br>
-            <a href="https://arxiv.org/abs/2607.21557">arXiv</a> /
-            <a href="https://arxiv.org/pdf/2607.21557">pdf</a> /
-            <a href="https://aka.ms/OpenForge-RL">code</a>
-            <p>
-              An open-source framework for training harness-native agents end-to-end across diverse environments, using a lightweight
-              proxy and Kubernetes-based rollout orchestration to connect real inference harnesses with scalable SFT/RL training.
-            </p>
-          </td>
-        </tr>
-
-        <tr class="publication">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="Rethinking Reasoning with MDLMs placeholder" src="images/papers/nclb.png">
-          </td>
-          <td class="pub-content-cell">
-            <a href="https://arxiv.org/abs/2510.19990"><span class="papertitle">Rethinking Reasoning with MDLMs: Early Exits, Post-hoc Reasoning, and Beyond</span></a>
-            <br>
-            Zachary Horvitz, Raghav Singhal, <strong>Hao Zou</strong>, Carles Domingo-Enrich, Zhou Yu, Rajesh Ranganath, Kathleen McKeown
-            <br>
-            <em>COLM 2026</em>
-            <br>
-            <a href="https://arxiv.org/abs/2510.19990">arXiv</a> /
+      <article class="pub pub-selected representative reveal">
+        <a class="pub-media" href="https://arxiv.org/abs/2510.19990">
+          <img src="images/papers/nclb.png" alt="Masked diffusion reasoning overview">
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="https://arxiv.org/abs/2510.19990">Rethinking Reasoning with MDLMs: Early Exits, Post-hoc Reasoning, and Beyond</a>
+          <p class="authors">Zachary Horvitz, Raghav Singhal, <span class="me">Hao Zou</span>, Carles Domingo-Enrich, Zhou Yu, Rajesh Ranganath, Kathleen McKeown</p>
+          <p class="venue">COLM 2026</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2510.19990">arXiv</a>
             <a href="data/horvitz2025nocompute.bib">bibtex</a>
-            <p>
-              Studies how masked diffusion language models use inference-time compute, including reasoning-as-infilling,
-              answer-conditioned posterior sampling, uncertainty-aware early exit, and reasoning validation.
-            </p>
-          </td>
-        </tr>
+          </p>
+          <p class="pub-desc">Studies reasoning-as-infilling, answer-conditioned reasoning, uncertainty-aware early exit, and adaptive inference in masked diffusion language models.</p>
+        </div>
+      </article>
 
-        <tr class="publication">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="Natural Question QA placeholder" src="images/papers/qa.png">
-          </td>
-          <td class="pub-content-cell">
-            <a href="https://aclanthology.org/2024.emnlp-main.1140/"><span class="papertitle">You Make me Feel like a Natural Question: Training QA Systems on Transformed Trivia Questions</span></a>
-            <br>
-            Tasnim Kabir, Yoo Yeon Sung, Saptarashmi Bandyopadhyay, <strong>Hao Zou</strong>, Abhranil Chandra, Jordan Boyd-Graber
-            <br>
-            <em>EMNLP 2024</em>
-            <br>
-            <a href="https://aclanthology.org/2024.emnlp-main.1140/">paper</a> /
+      <article class="pub pub-selected representative reveal">
+        <a class="pub-media" href="https://osworld-v2.xlang.ai/">
+          <img src="images/papers/osworld2.png" alt="OSWorld 2.0 long-horizon computer-use tasks">
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="https://osworld-v2.xlang.ai/">OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks</a>
+          <p class="authors">Large collaborative project</p>
+          <p class="venue">arXiv, 2026</p>
+          <p class="pub-links">
+            <a href="https://osworld-v2.xlang.ai/">website</a>
+            <a href="https://arxiv.org/abs/2606.29537">arXiv</a>
+            <a href="https://arxiv.org/pdf/2606.29537">pdf</a>
+          </p>
+          <p class="pub-desc">A benchmark for evaluating computer-use agents on realistic, long-horizon workflows in dynamic environments.</p>
+        </div>
+      </article>
+
+      <article class="pub pub-selected representative reveal">
+        <a class="pub-media" href="https://arxiv.org/abs/2607.21557">
+          <img src="images/papers/rollout_arch_0716.png" alt="OpenForgeRL architecture">
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="https://arxiv.org/abs/2607.21557">OpenForgeRL: Train Harness-native Agents in Any Environment</a>
+          <p class="authors">Xiao Yu, Baolin Peng, Ruize Xu, <span class="me">Hao Zou</span>, Qianhui Wu, Hao Cheng, Wenlin Yao, Nikhil Singh, Zhou Yu, Jianfeng Gao</p>
+          <p class="venue">arXiv, 2026</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2607.21557">arXiv</a>
+            <a href="https://aka.ms/OpenForge-RL">code</a>
+          </p>
+          <p class="pub-desc">A framework for scalable SFT/RL training of agents inside the same harnesses and environments used at inference time.</p>
+        </div>
+      </article>
+
+      <article class="pub pub-all reveal">
+        <a class="pub-media" href="https://aclanthology.org/2024.emnlp-main.1140/">
+          <img src="images/papers/qa.png" alt="Natural question transformation example">
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="https://aclanthology.org/2024.emnlp-main.1140/">You Make me Feel like a Natural Question: Training QA Systems on Transformed Trivia Questions</a>
+          <p class="authors">Tasnim Kabir, Yoo Yeon Sung, Saptarashmi Bandyopadhyay, <span class="me">Hao Zou</span>, Abhranil Chandra, Jordan Boyd-Graber</p>
+          <p class="venue">EMNLP 2024</p>
+          <p class="pub-links">
+            <a href="https://aclanthology.org/2024.emnlp-main.1140/">paper</a>
             <a href="data/kabir2024natural.bib">bibtex</a>
-            <p>
-              Transforms trivia-style questions into more natural information-seeking questions to improve retrieval alignment
-              and cross-domain question answering.
-            </p>
-          </td>
-        </tr>
+          </p>
+          <p class="pub-desc">Transforms trivia questions into natural information-seeking questions to improve retrieval alignment and cross-domain QA.</p>
+        </div>
+      </article>
 
-        <tr class="publication">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="Diffusion Models in NLP placeholder" src="images/papers/diffusion_survey.png">
-          </td>
-          <td class="pub-content-cell">
-            <a href="https://arxiv.org/abs/2305.14671"><span class="papertitle">A Survey of Diffusion Models in Natural Language Processing</span></a>
-            <br>
-            <strong>Hao Zou</strong>, Zae Myung Kim, Dongyeop Kang
-            <br>
-            <em>arXiv, 2023</em>
-            <br>
-            <a href="https://arxiv.org/abs/2305.14671">arXiv</a> /
+      <article class="pub pub-all reveal">
+        <a class="pub-media" href="https://arxiv.org/abs/2305.14671">
+          <img src="images/papers/diffusion_survey.png" alt="Diffusion models in NLP overview">
+        </a>
+        <div class="pub-body">
+          <a class="pub-title" href="https://arxiv.org/abs/2305.14671">A Survey of Diffusion Models in Natural Language Processing</a>
+          <p class="authors"><span class="me">Hao Zou</span>, Zae Myung Kim, Dongyeop Kang</p>
+          <p class="venue">arXiv, 2023</p>
+          <p class="pub-links">
+            <a href="https://arxiv.org/abs/2305.14671">arXiv</a>
             <a href="data/zou2023survey.bib">bibtex</a>
-            <p>
-              Surveys diffusion formulations for NLP, including non-autoregressive generation, text editing, token-level control,
-              robustness, and scaling directions for diffusion language models.
-            </p>
-          </td>
-        </tr>
-
-        <tr class="publication">
-          <td class="pub-image-cell">
-            <img class="pub-image" alt="Causal debiasing placeholder" src="images/papers/debias.png">
-          </td>
-          <td class="pub-content-cell">
-            <span class="papertitle">Debiasing Language Models for In-Context Learning Using a Causal Inference-Inspired Method</span>
-            <br>
-            <strong>Hao Zou</strong>, Karin de Langis, Dongyeop Kang, Yohan Jo
-            <br>
-            <em>Manuscript, 2023</em>
-            <br>
-            <a href="data/zou2023debiasing.bib">bibtex</a>
-            <p>
-              Uses intervention-inspired estimates of the causal effect of input text to reduce spurious prompt-label bias in in-context learning.
-            </p>
-          </td>
-        </tr>
-
-      </tbody></table>
+          </p>
+          <p class="pub-desc">A survey of diffusion formulations for text generation, editing, controllability, robustness, and non-autoregressive language modeling.</p>
+        </div>
+      </article>
     </section>
 
-    <section>
-      <h2>Experience</h2>
-      <table class="experience-table"><tbody>
-        <tr>
-          <td class="date-cell">2025 - Present</td>
-          <td><strong>NLP Lab, Columbia University</strong><br>Graduate researcher / Staff Associate I. Working on faithful summarization, masked diffusion language models, inference-time algorithms, and LLM agents with Kathleen McKeown, Zhou Yu, Zachary Horvitz, and Xiao Yu.</td>
-        </tr>
-        <tr>
-          <td class="date-cell">2024 - 2025</td>
-          <td><strong>IBM</strong><br>AI Algorithms Intern. Worked on LLM inference efficiency, KV-cache quantization, and attention benchmarking.</td>
-        </tr>
-        <tr>
-          <td class="date-cell">2024 - 2025</td>
-          <td><strong>Duke University</strong><br>Graduate research with Enmao Diao on diffusion/flow-matching training objectives and benchmarking.</td>
-        </tr>
-        <tr>
-          <td class="date-cell">2021 - 2023</td>
-          <td><strong>University of Minnesota NLP Group</strong><br>Undergraduate research with Dongyeop Kang on diffusion models for NLP, causal analysis, and controllable generation.</td>
-        </tr>
-        <tr>
-          <td class="date-cell">2021 - 2022</td>
-          <td><strong>UMD CLIP Lab</strong><br>Undergraduate research with Jordan Boyd-Graber on question rewriting and retrieval for open-domain QA.</td>
-        </tr>
-        <tr>
-          <td class="date-cell">2022 - 2023</td>
-          <td><strong>Sony Research</strong><br>Research intern on controllable generation and reinforcement learning from human preferences.</td>
-        </tr>
-      </tbody></table>
-    </section>
-
-    <footer>
-      <p>
-        This website is adapted from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron's academic website template</a>.
-        Last updated: August 2026.
-      </p>
+    <footer class="reveal">
+      <span>Hao Zou</span>
+      <span class="footer-dot">·</span>
+      <span>Last updated September 2026</span>
     </footer>
   </main>
-<script data-goatcounter="https://haozou-official.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js"></script>
+
+  <script>
+    // Publication filter: selected by default.
+    function showPubs(mode) {
+      const allItems = document.querySelectorAll('.pub');
+      const selectedOnly = document.querySelectorAll('.pub-all');
+      const selectedBtn = document.getElementById('select0');
+      const allBtn = document.getElementById('select1');
+
+      allItems.forEach((el) => { el.style.display = ''; });
+      if (mode === 0) selectedOnly.forEach((el) => { el.style.display = 'none'; });
+
+      selectedBtn.classList.toggle('active', mode === 0);
+      allBtn.classList.toggle('active', mode === 1);
+    }
+    showPubs(0);
+
+    // Theme toggle, remembered across visits.
+    const root = document.documentElement;
+    const btnLight = document.getElementById('themeLight');
+    const btnDark = document.getElementById('themeDark');
+
+    function applyTheme(theme, save = true) {
+      root.setAttribute('data-theme', theme);
+      btnLight.classList.toggle('active', theme === 'light');
+      btnDark.classList.toggle('active', theme === 'dark');
+      if (save) {
+        try { localStorage.setItem('theme', theme); } catch (e) {}
+      }
+    }
+
+    let initialTheme = 'light';
+    try {
+      const saved = localStorage.getItem('theme');
+      if (saved === 'dark' || saved === 'light') initialTheme = saved;
+      else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) initialTheme = 'dark';
+    } catch (e) {}
+    applyTheme(initialTheme, false);
+    btnLight.addEventListener('click', () => applyTheme('light'));
+    btnDark.addEventListener('click', () => applyTheme('dark'));
+
+    // Subtle reveal-on-scroll animation.
+    const revealEls = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('in');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+      revealEls.forEach((el) => observer.observe(el));
+    } else {
+      revealEls.forEach((el) => el.classList.add('in'));
+    }
+  </script>
+
+  <script data-goatcounter="https://haozou-official.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
