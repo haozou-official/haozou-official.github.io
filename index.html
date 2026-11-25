@@ -101,6 +101,7 @@
           <a href="https://scholar.google.com/citations?hl=en&user=jwujaocAAAAJ">Google Scholar</a>
           <a href="https://github.com/haozou-official">GitHub</a>
           <a href="https://www.linkedin.com/in/hao-zou-05b447248/">LinkedIn</a>
+          <a href="https://haozou-official.github.io/research/">Research</a>
         </nav>
       </div>
 
@@ -120,8 +121,8 @@
       <p class="note reveal">Representative work across diffusion language models and long-horizon agents.</p>
 
       <article class="pub pub-selected representative reveal">
-        <a class="pub-media" href="https://arxiv.org/abs/2606.12807">
-          <img src="images/papers/drr.png" alt="Detect, Remask, Repair method overview">
+        <a class="pub-media cover" href="https://arxiv.org/abs/2606.12807">
+          <img src="images/papers/drr-example.png" alt="Detect, Remask, Repair: unsupported spans are detected after new updates arrive">
         </a>
         <div class="pub-body">
           <a class="pub-title" href="https://arxiv.org/abs/2606.12807">Detect, Remask, Repair: Diffusion Editing for Faithful Summarization of Evolving Contexts</a>
@@ -152,8 +153,8 @@
       </article>
 
       <article class="pub pub-selected representative reveal">
-        <a class="pub-media" href="https://osworld-v2.xlang.ai/">
-          <img src="images/papers/osworld2.png" alt="OSWorld 2.0 long-horizon computer-use tasks">
+        <a class="pub-media cover" href="https://osworld-v2.xlang.ai/">
+          <img src="images/papers/osworld2-poster.jpg" alt="OSWorld 2.0 long-horizon computer-use tasks">
         </a>
         <div class="pub-body">
           <a class="pub-title" href="https://osworld-v2.xlang.ai/">OSWorld 2.0: Benchmarking Computer Use Agents on Long-Horizon Real-World Tasks</a>
@@ -170,7 +171,7 @@
 
       <article class="pub pub-selected representative reveal">
         <a class="pub-media" href="https://arxiv.org/abs/2607.21557">
-          <img src="images/papers/rollout_arch_0716.png" alt="OpenForgeRL architecture">
+          <img src="images/papers/openforgerl.png" alt="OpenForgeRL architecture">
         </a>
         <div class="pub-body">
           <a class="pub-title" href="https://arxiv.org/abs/2607.21557">OpenForgeRL: Train Harness-native Agents in Any Environment</a>
@@ -184,7 +185,7 @@
         </div>
       </article>
 
-      <article class="pub pub-all reveal">
+      <article class="pub pub-selected reveal">
         <a class="pub-media" href="https://aclanthology.org/2024.emnlp-main.1140/">
           <img src="images/papers/qa.png" alt="Natural question transformation example">
         </a>
@@ -200,7 +201,7 @@
         </div>
       </article>
 
-      <article class="pub pub-all reveal">
+      <article class="pub pub-selected reveal">
         <a class="pub-media" href="https://arxiv.org/abs/2305.14671">
           <img src="images/papers/diffusion_survey.png" alt="Diffusion models in NLP overview">
         </a>
@@ -213,6 +214,21 @@
             <a href="data/zou2023survey.bib">bibtex</a>
           </p>
           <p class="pub-desc">A survey of diffusion formulations for text generation, editing, controllability, robustness, and non-autoregressive language modeling.</p>
+        </div>
+      </article>
+
+      <article class="pub pub-selected reveal">
+        <span class="pub-media">
+          <img src="images/papers/debias.png" alt="Debiased in-context predictions on sentiment and NLI examples">
+        </span>
+        <div class="pub-body">
+          <span class="pub-title">Debiasing Language Models for In-Context Learning Using a Causal Inference-Inspired Method</span>
+          <p class="authors"><span class="me">Hao Zou</span>, Karin de Langis, Dongyeop Kang, Yohan Jo</p>
+          <p class="venue">Manuscript, 2023</p>
+          <p class="pub-links">
+            <a href="data/zou2023debiasing.bib">bibtex</a>
+          </p>
+          <p class="pub-desc">A causal-inference-inspired method that estimates the effect of input text on candidate labels to debias in-context learning.</p>
         </div>
       </article>
     </section>
@@ -274,7 +290,7 @@
             observer.unobserve(entry.target);
           }
         });
-      }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+      }, { threshold: 0.08 });
       revealEls.forEach((el) => observer.observe(el));
     } else {
       revealEls.forEach((el) => el.classList.add('in'));
